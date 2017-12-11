@@ -1,0 +1,102 @@
+<RelativeLayout android:id="@+id/loadingStateRelativeLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+        <!--<ProgressBar-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:id="@+id/progress1"-->
+        <!--android:indeterminateDrawable="@drawable/progress_gear_fu"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+        <!--<ProgressBar-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:id="@+id/progress2"-->
+        <!--android:layout_marginTop="-30dp"-->
+        <!--android:layout_marginRight="-30dp"-->
+        <!--android:indeterminateDrawable="@drawable/progress_gear_fu"-->
+        <!--android:layout_below="@+id/progress1"-->
+        <!--android:layout_toLeftOf="@+id/progress1"-->
+        <!--android:layout_toStartOf="@+id/progress1" />-->
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progress3"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="-20dp"-->
+        <!--android:indeterminateDrawable="@drawable/progress_gear_fu"-->
+        <!--android:layout_below="@+id/progress1"-->
+        <!--android:layout_toRightOf="@+id/progress1"-->
+        <!--android:layout_toEndOf="@+id/progress1" />-->
+
+        <!--<ProgressBar-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/progress4"-->
+        <!--android:layout_below="@+id/progress2"-->
+        <!--android:indeterminateDrawable="@drawable/progress_gear"-->
+        <!--android:layout_alignLeft="@+id/progress1"-->
+        <!--android:layout_alignStart="@+id/progress1" />-->
+
+        <!--<ProgressBar-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_marginLeft="-20dp"-->
+        <!--android:id="@+id/loadingStateProgressBar"-->
+        <!--android:indeterminateDrawable="@drawable/progress_gear_fu"-->
+        <!--android:layout_below="@+id/progress4"-->
+        <!--android:layout_toRightOf="@+id/progress4"-->
+        <!--android:layout_toEndOf="@+id/progress4" />-->
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/loadingStateProgressBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"/>-->
+        <ImageView
+            android:id="@+id/yun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/yun"
+            />
+
+        <ImageView
+            android:id="@+id/niao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/niao"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="10dp"
+            android:text="数据加载中..."
+            android:textColor="@color/black33"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ali_header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:visibility="gone"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:id="@+id/ali_frame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/ali_header_progressbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateDrawable="@drawable/loding"
+            android:layout_toLeftOf="@+id/ali_header_text"
+            android:layout_toStartOf="@+id/ali_header_text"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/ali_header_arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/loding"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ali_header_text"
+            android:layout_toStartOf="@+id/ali_header_text"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/ali_header_text"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="下拉刷新"/>
+    </RelativeLayout>
+</LinearLayout>

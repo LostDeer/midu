@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_base"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px">
+
+        <ImageView
+            android:id="@+id/iv_toolBarBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:src="@drawable/fanhui"
+            />
+
+        <TextView
+            android:id="@+id/tv_toolBarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black33"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_toolbarright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:textSize="12sp"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:textColor="@color/black33"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/huixian"/>
+</LinearLayout>

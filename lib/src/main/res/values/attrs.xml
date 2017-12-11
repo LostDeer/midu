@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LMBanners">
+        <attr name = "canLoop" format = "boolean" />
+        <attr name="durtion" format="integer"></attr>
+        <attr name="scroll_duration" format="integer"></attr>
+        <attr name="indicator_select" format="reference"></attr>
+        <attr name="indicator_unselect" format="reference"></attr>
+        <!--是否为引导页-->
+        <attr name="isGuide" format="boolean"></attr>
+
+        <attr name="indicatorBottomPadding" format="integer"></attr>
+
+        <attr name="indicator_position" />
+        <!-- 是否可以自动播放-->
+        <attr name="auto_play" format="boolean" />
+
+        <attr name="horizontal_transitionEffect"  />
+        <!-- 是否纵向滑动-->
+        <attr name="isVertical" format="boolean" />
+        <!--指示器原点大小-->
+        <attr name="indicator_width" format="integer" />
+
+    </declare-styleable>
+    <attr name="horizontal_transitionEffect" format="enum">
+        <enum name="defaultEffect" value="0" />
+        <enum name="alpha" value="1" />
+        <enum name="rotate" value="2" />
+        <enum name="cube" value="3" />
+        <enum name="flip" value="4" />
+        <enum name="accordion" value="5" />
+        <enum name="zoomFade" value="6" />
+        <enum name="fade" value="7" />
+        <enum name="zoomCenter" value="8" />
+        <enum name="zoomStack" value="9" />
+        <enum name="stack" value="10" />
+        <enum name="depth" value="11" />
+        <enum name="zoom" value="12" />
+        <enum name="zoomOut" value="13" />
+
+
+    </attr>
+    <!-- 指示器位置-->
+    <attr name="indicator_position">
+        <enum name="bottom_mid" value="0" />
+        <enum name="bottom_right" value="1" />
+    </attr>
+
+    <declare-styleable name="GuideViewPager">
+        <attr name="indicatorCount" format="integer"/>
+        <attr name="indicatorUnSelect" format="color"/>
+        <attr name="indicatorSelect" format="color"/>
+        <attr name="indicatorSizi" format="dimension"/>
+        <attr name="indicatorPadding" format="dimension"/>
+        <attr name="indicatorBottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressActivity">
+
+        <attr name="loadingProgressBarWidth" format="dimension"/>
+        <attr name="loadingProgressBarHeight" format="dimension"/>
+        <attr name="loadingBackgroundColor" format="color"/>
+
+        <attr name="emptyImageWidth" format="dimension"/>
+        <attr name="emptyImageHeight" format="dimension"/>
+        <attr name="emptyTitleTextSize" format="dimension"/>
+        <attr name="emptyContentTextSize" format="dimension"/>
+        <attr name="emptyTitleTextColor" format="color"/>
+        <attr name="emptyContentTextColor" format="color"/>
+        <attr name="emptyBackgroundColor" format="color"/>
+
+        <attr name="errorImageWidth" format="dimension"/>
+        <attr name="errorImageHeight" format="dimension"/>
+        <attr name="errorTitleTextSize" format="dimension"/>
+        <attr name="errorContentTextSize" format="dimension"/>
+        <attr name="errorTitleTextColor" format="color"/>
+        <attr name="errorContentTextColor" format="color"/>
+        <attr name="errorButtonTextColor" format="color"/>
+        <attr name="errorBackgroundColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SpringView">
+        <attr name="type">
+            <enum name="overlap" value="0"/>
+            <enum name="follow" value="1"/>
+        </attr>
+        <attr name="give">
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="none" value="3"/>
+        </attr>
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+    </declare-styleable>
+</resources>
