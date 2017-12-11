@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,7 +23,7 @@ import aduio.lib.ui.BaseActivity;
 import aduio.midu.LocalAudioEntity;
 import aduio.midu.R;
 import aduio.midu.ui.fragments.BuyFragment;
-import aduio.midu.ui.fragments.HoverFragment;
+import aduio.midu.ui.fragments.HomeFragment;
 import aduio.midu.ui.fragments.MeFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -101,7 +100,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initFragment() {
-        mFragments[0] = new HoverFragment();
+        mFragments[0] = new HomeFragment();
         mFragments[1] = new BuyFragment();
         mFragments[2] = new MeFragment();
 
@@ -138,15 +137,15 @@ public class MainActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_mainCrowd:
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //显示状态栏
+//                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //显示状态栏
                 showFragment(0);
                 break;
             case R.id.ll_mainFind:
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //显示状态栏
+//                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //显示状态栏
                 showFragment(1);
                 break;
             case R.id.ll_mainMe:
-                getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //隐藏状态栏
+//                getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //隐藏状态栏
                 showFragment(2);
                 break;
         }

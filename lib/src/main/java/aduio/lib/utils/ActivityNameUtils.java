@@ -11,7 +11,7 @@ public class ActivityNameUtils {
     private ActivityNameUtils() {
         activityName.put("WelcomeActivity","");
         activityName.put("GuideActivity","");
-        activityName.put("MainActivity","");
+//        activityName.put("MainActivity","");
     }
 
     private static ActivityNameUtils sActivityNameUtils = null;
